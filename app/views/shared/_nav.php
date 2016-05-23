@@ -1,6 +1,6 @@
 <nav class="grey lighten-4" role="navigation">
   <div class="nav-wrapper padding" id="header-nav">
-    <a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <!-- <a id="logo-container" href="#" class="brand-logo">Logo</a> -->
     <ul class="right hide-on-med-and-down">
       <li><a href="#"><i class="tiny material-icons right">settings</i>Ver perfil</a></li>
       <li><a href="#"><i class="tiny material-icons right">exit_to_app</i>Cerrar Sesión</a></li>

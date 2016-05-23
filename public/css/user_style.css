@@ -30,3 +30,45 @@ p {
   font-weight: 400;
   font-size: 1.1em;
 }
+
+/* Utilities */
+ .padding {
+   padding: 0px 20px;
+ }
+
+.container {
+  padding-top: 30px;
+}
+
+/* Sidebar */
+nav, .container {
+  padding-left: 240px;
+}
+
+.container {
+  width: 90%;
+}
+
+@media only screen and (max-width : 992px) {
+  nav, .container {
+    padding-left: 0;
+  }
+}
+
+.form.col {
+  padding-top: 30px;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #4fc3f7;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #4fc3f7;
+ box-shadow: 0 1px 0 0 #4fc3f7;
+}
+
+.select-wrapper li span {
+  color: #0288d1 ;
+}
