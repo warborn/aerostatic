@@ -12,24 +12,38 @@
   </div>
 </nav>
 
-<div id="index-banner" class="parallax-container">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <br><br>
-      <h1 class="header center grey-text text-lighten-4">Reserva tu viaje hoy</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Disfruta de una de las mejores experiencias, tenemos una gran variedad de destinos.</h5>
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="img/slider1.jpg">
+      <div class="caption center-align">
+        <h3>!La mejor experiencia que he vivido!</h3>
+        <h5 class="light grey-text text-lighten-3">"No se lo pueden perder!!!Es increible lo que se puede ver desde las alturas, la atención por parte del personal fue excelente, el vuelo salio justo a tiempo, yo y mi familia disfrutamos al máximo este momento."</h5>
       </div>
-      <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light light-blue darken-3">Reserva ahora</a>
+    </li>
+    <li>
+      <img src="img/slider2.jpg">
+      <div class="caption right-align">
+        <h3>!La mejor experiencia que he vivido!</h3>
+        <h5 class="light grey-text text-lighten-3">"No se lo pueden perder!!!Es increible lo que se puede ver desde las alturas, la atención por parte del personal fue excelente, el vuelo salio justo a tiempo, yo y mi familia disfrutamos al máximo este momento."</h5>
       </div>
-      <br><br>
-
-    </div>
-  </div>
-  <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+    </li>
+    <li>
+      <img src="img/slider3.jpg">
+      <div class="caption center-align">
+        <h3>!La mejor experiencia que he vivido!</h3>
+        <h5 class="light grey-text text-lighten-3">"No se lo pueden perder!!!Es increible lo que se puede ver desde las alturas, la atención por parte del personal fue excelente, el vuelo salio justo a tiempo, yo y mi familia disfrutamos al máximo este momento."</h5>
+      </div>
+    </li>
+    <li>
+      <img src="img/slider4.jpg">
+      <div class="caption left-align">
+        <h3>!La mejor experiencia que he vivido!</h3>
+        <h5 class="light grey-text text-lighten-3">"No se lo pueden perder!!!Es increible lo que se puede ver desde las alturas, la atención por parte del personal fue excelente, el vuelo salio justo a tiempo, yo y mi familia disfrutamos al máximo este momento."</h5>
+      </div>
+    </li>
+  </ul>
 </div>
-
 
 <div class="container">
   <div class="section">
@@ -61,20 +75,25 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
-
-<div class="parallax-container valign-wrapper">
+<div id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container">
+      <br><br>
+      <h1 class="header center grey-text text-lighten-4">Reserva tu viaje hoy</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Ya sea que quieras viajar solo o con toda la familia, nosotros tenemos opciones que se ajustan a ti.</h5>
+        <h5 class="header col s12 light">Disfruta de una de las mejores experiencias, tenemos una gran variedad de destinos.</h5>
       </div>
+      <div class="row center">
+        <a href="" id="download-button" class="btn-large waves-effect waves-light light-blue darken-3">Reserva ahora</a>
+      </div>
+      <br><br>
+
     </div>
   </div>
-  <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
+  <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
 </div>
 
 <div class="container">
@@ -98,11 +117,11 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h5 class="header col s12 light">Volar en globo aerostático es la actividad ideal para todos, desde niños hasta personas nerviosas.</h5>
+        <h5 class="header col s12 light">Ya sea que quieras viajar solo o con toda la familia, nosotros tenemos opciones que se ajustan a ti.</h5>
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
+  <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
 </div>
 
 <div class="container">
@@ -117,6 +136,24 @@
     </div>
   </div>
 </div>
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">Volar en globo aerostático es la actividad ideal para todos, desde niños hasta personas nerviosas.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
+</div>
+
+<div class="row" id="row-map">
+  <div class="col s12 m8 l8 offset-m2 offset-l2">
+    <div id="google-map"></div>
+  </div>
+</div>
+
 
 <footer class="page-footer light-blue darken-3">
   <div class="container">
