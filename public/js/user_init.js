@@ -27,5 +27,9 @@
   if(setablePicker) {
     setablePicker.set('select', intialDate, {format: 'yyyy-mm-dd'});
   }
+
+  var textAreaContent = $('#textarea-content').val();
+  $('#textarea').val(textAreaContent);
+  $('#textarea').trigger('autoresize');
   }); // end of document ready
 })(jQuery); // end of jQuery name space
