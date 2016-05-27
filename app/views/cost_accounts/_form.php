@@ -1,11 +1,11 @@
 <div class="row">
-  <form class="form col s12 z-depth-1" action="<?php echo $action == 'add' ? 'extras' : "extras/{$extra->id}"; ?>" method="post">
+  <form class="form col s12 z-depth-1" action="<?php echo $action == 'add' ? 'extras' : "extras/{$cost_account->id}"; ?>" method="post">
     <div class="row">
       <?php if($action == 'edit') { ?>
       <input type="hidden" name="_method" value="PATCH">
       <?php } ?>
       <div class="input-field col s12 m10 l8 offset-m1 offset-l2">
-        <input placeholder="Nombre" type="text" class="validate" name="extra[name]" value="<?php echo $extra->name; ?>">
+        <input placeholder="Nombre" type="text" class="validate" name="extra[name]" value="<?php echo $cost_account->name; ?>">
         <label>Nombre</label>
       </div>
     </div>
