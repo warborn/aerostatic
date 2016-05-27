@@ -1,15 +1,3 @@
-#nav-mobile a,
-#slide-out a {
-  color: white;
-}
-
-#nav-mobile a,
-#slide-out a,
-#header-nav a {
-  font-weight: 400;
-  font-size: 1.1em;
-}
-
 /* Utilities */
  .padding {
    padding: 0px 20px;
