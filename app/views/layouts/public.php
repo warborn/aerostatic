@@ -10,6 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="vendor/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/shared.css" type="text/css" rel="stylesheet">
   <link href="css/public_style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>

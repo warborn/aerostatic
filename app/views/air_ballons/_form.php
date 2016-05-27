@@ -10,8 +10,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="file-field input-field col s12 m10 l8 offset-m1 offset-l2">
-        <div class="btn">
+      <div class="file-field input-field col s12 m10 l8 offset-m1 offset-l2 ">
+        <div class="btn light-blue lighten-2">
         <span>Imagen</span>
         <input type="file" name="air_ballon[image]">
       </div>

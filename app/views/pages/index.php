@@ -1,11 +1,11 @@
 <nav class="grey lighten-4" role="navigation">
-  <div class="nav-wrapper container">
+  <div class="nav-wrapper container" id="header-nav">
     <a id="logo-container" href="#" class="brand-logo">Aerostatic</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="">Ingresar</a></li>
     </ul>
 
-    <ul id="nav-mobile" class="side-nav">
+    <ul id="nav-mobile" class="side-nav light-blue darken-3">
       <li><a href="">Ingresar</a></li>
     </ul>
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -51,7 +51,7 @@
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">thumb_up</i></h2>
+          <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">thumb_up</i></h2>
           <h5 class="center">Objetivo</h5>
           <p class="light">Nuestro único objetivo es que disfrutes totalmente de esta experiencia, tenemos tu seguridad muy presente. Nuestros pilotos cuentan con cientos de horas de vuelo y licencias vigentes , así como toda la experiencia para ejecutar esta increíble labor.</p>
         </div>
@@ -59,7 +59,7 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">cloud</i></h2>
+          <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">cloud</i></h2>
           <h5 class="center">Vive la experiencia</h5>
 
           <p class="light">Paseos en globo aerostático, la aventura de altura con mas demandada en los últimos años, una excelente vista panorámica ,disfruta de los recorridos en globo aerostático por toda la zona arqueológica de Teotihuacán, que combinan historia con una vista inigualable.</p>
@@ -68,7 +68,7 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">wc</i></h2>
+          <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">wc</i></h2>
           <h5 class="center">Seguridad</h5>
 
           <p class="light">Es lo más importante para nosotros, te informamos que esta actividad es considerada una de las más seguras, debido a que el globo flota. Además, tenemos equipo de alta calidad que cumple con todas las normas de seguridad establecidas; con pilotos preparados y experimentados.</p>
@@ -87,7 +87,7 @@
         <h5 class="header col s12 light">Disfruta de una de las mejores experiencias, tenemos una gran variedad de destinos.</h5>
       </div>
       <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light light-blue darken-3">Reserva ahora</a>
+        <a href="" id="download-button" class="btn-large waves-effect waves-light green lighten-1">Reserva ahora</a>
       </div>
       <br><br>
 
