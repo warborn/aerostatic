@@ -23,6 +23,9 @@
       formatSubmit: 'yyyy-mm-dd'
     });
   var intialDate = $('#initialize-picker').val();
-  picker.pickadate('picker').set('select', intialDate, {format: 'yyyy-mm-dd'});
+  var setablePicker = picker.pickadate('picker');
+  if(setablePicker) {
+    setablePicker.set('select', intialDate, {format: 'yyyy-mm-dd'});
+  }
   }); // end of document ready
 })(jQuery); // end of jQuery name space
