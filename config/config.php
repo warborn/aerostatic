@@ -5,6 +5,7 @@ Config::set('db.host', 'localhost');
 Config::set('db.user', 'root');
 Config::set('db.password', getenv('mysql_password'));
 Config::set('db.db_name', 'aerostatic_test');
+Config::set('base_url', '/php/aerostatic');
 
 FileUploader::initialize(ROOT.DS.'public'.DS.'uploads');
 FileUploader::set_max_size(2000 * 1024);

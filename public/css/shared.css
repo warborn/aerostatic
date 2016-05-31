@@ -7,7 +7,11 @@
 #slide-out a,
 #header-nav ul a {
   font-weight: 400;
-  font-size: 1.05em;
+  font-size: 1em;
+}
+
+li a i.material-icons {
+  font-size: 25px;
 }
 
 nav ul a,

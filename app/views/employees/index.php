@@ -14,7 +14,7 @@
               <th data-field="last-name">Apellido Materno</th>
               <th data-field="salary">Salario</th>
               <th data-field="hire-date">Fecha de contratación</th>
-              <th>Acciones<th>
+              <th>Acciones</th>
           </tr>
         </thead>
 
