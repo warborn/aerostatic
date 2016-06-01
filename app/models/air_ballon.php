@@ -5,6 +5,9 @@ class AirBallon extends ActiveRecord {
   protected static $belongs_to = [
     ['type']
   ];
+  protected static $has_many_through = [
+    ['routes']
+  ];
 }
 
 ?>
