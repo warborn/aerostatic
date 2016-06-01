@@ -1,6 +1,6 @@
 <?php
 
-class CostAccountsController extends ActionController {
+class CostAccountsController extends ApplicationController {
   public $layout = 'user';
 
   public function index() {

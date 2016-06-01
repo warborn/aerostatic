@@ -1,6 +1,6 @@
 <?php
 
-class RoutesController extends ActionController {
+class RoutesController extends ApplicationController {
   public $layout = 'user';
 
   public function index() {

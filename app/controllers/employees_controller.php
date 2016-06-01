@@ -1,6 +1,6 @@
 <?php
 
-class EmployeesController extends ActionController {
+class EmployeesController extends ApplicationController {
   protected $layout = 'user';
 
   public function index() {

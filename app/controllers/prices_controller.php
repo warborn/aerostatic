@@ -1,6 +1,6 @@
 <?php
 
-class PricesController extends ActionController {
+class PricesController extends ApplicationController {
   public $layout = 'user';
 
   public function index() {

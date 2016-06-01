@@ -1,6 +1,6 @@
 <?php
 
-class PagesController extends ActionController {
+class PagesController extends ApplicationController {
   protected $layout = 'public';
 
   public function index() {

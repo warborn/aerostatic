@@ -1,6 +1,6 @@
 <?php
 
-class TypesController extends ActionController {
+class TypesController extends ApplicationController {
   public $layout = 'user';
 
   public function index() {

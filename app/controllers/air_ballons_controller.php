@@ -1,6 +1,6 @@
 <?php
 
-class AirBallonsController extends ActionController {
+class AirBallonsController extends ApplicationController {
   public $layout = 'user';
 
   public function index() {
