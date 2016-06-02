@@ -4,8 +4,20 @@ function is_logged_in() {
   return isset($_SESSION['user_email']);
 }
 
+function is_client_logged_in() {
+  if(is_logged_in()) {
+    return !is_current_user_admin();
+  } else {
+    return false;
+  }
+}
+
 function is_admin_logged_in() {
-  return is_current_user_admin();
+  if(is_logged_in()) {
+    return is_current_user_admin();
+  } else {
+    return false;
+  }
 }
 
 function current_user() {

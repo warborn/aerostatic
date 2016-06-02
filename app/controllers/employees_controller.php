@@ -1,7 +1,9 @@
 <?php
 
 class EmployeesController extends ApplicationController {
-  public $before_action = ['confirm_logged_in'];
+  public $before_action = [
+    'confirm_admin_logged_in' => []
+  ];
   protected $layout = 'user';
 
   public function index() {

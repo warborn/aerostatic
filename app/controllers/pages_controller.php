@@ -1,7 +1,9 @@
 <?php
 
 class PagesController extends ApplicationController {
-  public $before_action = ['redirect_if_logged_in'];
+  public $before_action = [
+    'redirect_if_logged_in' => []
+  ];
   protected $layout = 'public';
 
   public function index() {

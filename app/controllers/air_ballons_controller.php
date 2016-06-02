@@ -1,7 +1,10 @@
 <?php
 
 class AirBallonsController extends ApplicationController {
-  public $before_action = ['confirm_logged_in'];
+  public $before_action = [
+    'confirm_admin_logged_in' => ['except' => ['travels']],
+    'confirm_client_logged_in'  => ['only'   => ['travels']]
+  ];
   public $layout = 'user';
 
   public function index() {

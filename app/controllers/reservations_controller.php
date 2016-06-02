@@ -2,7 +2,9 @@
 require_once(ROOT.DS.'public'.DS.'vendor'.DS.'html2pdf'.DS.'html2pdf.class.php');
 
 class ReservationsController extends ApplicationController {
-  public $before_action = ['confirm_logged_in'];
+  public $before_action = [
+    'confirm_user_logged_in' => []
+  ];
   public $layout = 'user';
 
   public function index() {
