@@ -40,3 +40,13 @@ footer.page-footer {
 #row-map {
   margin-bottom: 0;
 }
+
+.modal {
+  max-height: 90%;
+}
+
+@media screen and (min-width: 993px) {
+  .modal {
+    width: 40%;
+  }
+}

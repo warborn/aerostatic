@@ -2,11 +2,11 @@
   <div class="nav-wrapper container" id="header-nav">
     <a id="logo-container" href="#" class="brand-logo">Aerostatic</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="">Ingresar</a></li>
+      <li><a href="#modal-login" class="modal-trigger">Ingresar</a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav light-blue darken-3">
-      <li><a href="">Ingresar</a></li>
+      <li><a href="#modal-login" class="modal-trigger">Ingresar</a></li>
     </ul>
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
@@ -87,7 +87,7 @@
         <h5 class="header col s12 light">Disfruta de una de las mejores experiencias, tenemos una gran variedad de destinos.</h5>
       </div>
       <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light green lighten-1">Reserva ahora</a>
+        <a href="#modal-register" class="btn-large waves-effect waves-light green lighten-1 btn modal-trigger">Reserva ahora</a>
       </div>
       <br><br>
 
@@ -170,3 +170,71 @@
     </div>
   </div>
 </footer>
+
+<!-- Modal Register-->
+<div id="modal-register" class="modal blue-grey lighten-5">
+  <div class="modal-content">
+    <div class="row">
+      <form class="form col s12" action="users" method="post">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Nombre(s)" type="text" class="validate" name="user[name]">
+            <label>Nombre(s)</label>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="Apellido Paterno" type="text" class="validate" name="user[first_name]">
+            <label>Apellido Paterno</label>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="Apellido Materno" type="text" class="validate" name="user[last_name]">
+            <label>Apellido Materno</label>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="Correo" type="email" class="validate" name="user[email]">
+            <label>Correo</label>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="Contraseña" type="password" class="validate" name="user[password]">
+            <label>Contraseña</label>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <button class="modal-action modal-close btn waves-effect waves-light green lighten-2" type="submit" name="action">
+                Registrarme
+                <i class="material-icons left">done</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Login-->
+<div id="modal-login" class="modal blue-grey lighten-5">
+  <div class="modal-content">
+    <div class="row">
+      <form class="form col s12" action="login" method="post">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Correo" type="email" class="validate" name="user[email]">
+            <label>Correo</label>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="Contraseña" type="password" class="validate" name="user[password]">
+            <label>Contraseña</label>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <button class="modal-action btn waves-effect waves-light green lighten-2" type="submit" name="action">
+                Iniciar sesión
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

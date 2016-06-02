@@ -39,3 +39,12 @@ nav, .container {
 .select-wrapper li span {
   color: #0288d1 ;
 }
+
+#settings a{
+  width: 210px;
+}
+
+#settings > a {
+  min-width: 210px;
+  text-transform: uppercase;
+}

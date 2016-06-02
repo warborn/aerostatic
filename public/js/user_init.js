@@ -4,7 +4,9 @@
     $('.button-collapse').sideNav();
     $('.collapsible').collapsible();
     $('.parallax').parallax();
-    $(".dropdown-button").dropdown();
+    $(".dropdown-button").dropdown({
+      belowOrigin: true
+    });
     $('select').material_select();
     var picker = $('.datepicker').pickadate({
         selectMonths: true,

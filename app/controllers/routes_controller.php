@@ -1,6 +1,7 @@
 <?php
 
 class RoutesController extends ApplicationController {
+  public $before_action = ['confirm_logged_in'];
   public $layout = 'user';
 
   public function index() {
