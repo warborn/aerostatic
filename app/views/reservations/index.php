@@ -3,11 +3,13 @@
     <table class="bordered highlight">
         <thead>
           <tr>
-              <th data-field="name">Fecha de remisión</th>
-              <th data-field="first-name">Globo</th>
-              <th data-field="last-name">Fecha del viaje</th>
-              <th data-field="salary">Hora</th>
-              <th data-field="hire-date">Ruta</th>
+              <th>Fecha de remisión</th>
+              <th>Globo</th>
+              <th>Fecha del viaje</th>
+              <th>Hora</th>
+              <th>Ruta</th>
+              <th>Duración</th>
+              <th>Reportes</th>
           </tr>
         </thead>
 
@@ -22,6 +24,8 @@
               <?php echo $reservation->itinerary->route->departure_place; ?> -
               <?php echo $reservation->itinerary->route->arrival_place; ?>
             </td>
+            <td><?php echo $reservation->itinerary->route->duration; ?></td>
+            <td><a target="_blank" href="reservations/<?php echo $reservation->id; ?>/report"><i class="small material-icons left red-text text-darken-3">picture_as_pdf</i></a></td>
           </tr>
           <?php } ?>
         </tbody>

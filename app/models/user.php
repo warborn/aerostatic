@@ -6,8 +6,12 @@ class User extends ActiveRecord {
     ['reservations']
   ];
 
-  public function full_name() {
+  public function username() {
     return $this->name . ' ' . $this->first_name;
+  }
+
+  public function full_name() {
+    return $this->first_name . ' ' . $this->last_name . ' ' . $this->name;
   }
 
   public function is_admin() {

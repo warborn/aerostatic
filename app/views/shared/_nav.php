@@ -8,7 +8,7 @@
         <li><a href=""><i class="tiny material-icons left">vpn_key</i>Cambiar contraseña</a></li>
         <li><a href="logout" data-method="DELETE"><i class="tiny material-icons left">exit_to_app</i>Cerrar Sesión</a></li>
       </ul>
-      <li id="settings"><a class='dropdown-button center-align' data-activates='settings-dropdown'><i class="small material-icons left">account_circle</i><?php echo current_user()->full_name(); ?></a></a></li>
+      <li id="settings"><a class='dropdown-button center-align' data-activates='settings-dropdown'><i class="small material-icons left">account_circle</i><?php echo current_user()->username(); ?></a></a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav light-blue darken-3">

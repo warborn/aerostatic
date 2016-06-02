@@ -1,4 +1,5 @@
 <?php
+require_once(ROOT.DS.'public'.DS.'vendor'.DS.'html2pdf'.DS.'html2pdf.class.php');
 
 class ReservationsController extends ApplicationController {
   public $before_action = ['confirm_logged_in'];
@@ -33,6 +34,14 @@ class ReservationsController extends ApplicationController {
         }
       }
     }
+  }
+
+  public function show_report() {
+    $reservation = Reservation::find($this->params['id']);
+
+    report('reservations/all.php', ['reservation' => $reservation]);
+
+    exit();
   }
 
   private function itinerary_params() {

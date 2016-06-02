@@ -8,6 +8,7 @@ $router->add('travels', 'GET', ['to' => 'air-ballons#travels']);
 $router->add('travels/{:id}/reservations/add', 'GET', ['to' => 'reservations#add']);
 $router->add('reservations', 'POST', ['to' => 'reservations#create']);
 $router->add('reservations', 'GET', ['to' => 'reservations#index']);
+$router->add('reservations/{:id}/report', 'GET', ['to' => 'reservations#show_report']);
 $router->resources('employees');
 $router->resources('routes');
 $router->resources('extras');
