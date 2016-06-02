@@ -26,7 +26,7 @@ function is_current_user_admin() {
   return current_user()->is_admin();
 }
 
-function report($relative_path, $variables = array()) {
+function report($relative_path, $name, $variables = array()) {
   $report_path = ROOT.DS.'app'.DS.'reports'.DS.$relative_path;
   $upload_path  = ROOT.DS.'public'.DS.'uploads';
 
@@ -38,10 +38,15 @@ function report($relative_path, $variables = array()) {
 
   try
   {
+      $file_path = ROOT.DS.'public'.DS.'uploads'.DS.$name;
       $html2pdf = new HTML2PDF('P', 'A4', 'en');
       $html2pdf->setDefaultFont('Arial');
       $html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-      $html2pdf->Output('exemple00.pdf');
+      $pdf_content = $html2pdf->Output('', true);
+      $fp = fopen($file_path, 'wb');
+      fwrite($fp, $pdf_content);
+      fclose($fp);
+      return $file_path;
   }
   catch(HTML2PDF_exception $e) {
       echo $e;

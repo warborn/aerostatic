@@ -38,9 +38,14 @@ class ReservationsController extends ApplicationController {
 
   public function show_report() {
     $reservation = Reservation::find($this->params['id']);
+    $name = 'reservation_' . $reservation->id . '.pdf';
 
-    report('reservations/all.php', ['reservation' => $reservation]);
-
+    header('Content-Type: application/pdf');
+    header('Content-disposition: attachment; filename='.$name);
+    header("Content-Transfer-Encoding: Binary");
+    $file_path = report('reservations/all.php', $name, ['reservation' => $reservation]);
+    readfile($file_path);
+    unlink($file_path);
     exit();
   }
 
