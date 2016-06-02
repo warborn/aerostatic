@@ -4,6 +4,10 @@ $router = App::get_router();
 
 $router->root(['to' => 'pages#index']);
 $router->resources('air-ballons');
+$router->add('travels', 'GET', ['to' => 'air-ballons#travels']);
+$router->add('travels/{:id}/reservations/add', 'GET', ['to' => 'reservations#add']);
+$router->add('reservations', 'POST', ['to' => 'reservations#create']);
+$router->add('reservations', 'GET', ['to' => 'reservations#index']);
 $router->resources('employees');
 $router->resources('routes');
 $router->resources('extras');
@@ -16,5 +20,4 @@ $router->add('logout', 'DELETE', ['to' => 'sessions#destroy']);
 // $router->resources('posts');
 // $router->resources('air-ballons');
 // $router->add('posts', GET, ['to' => 'posts#index']);
-
 ?>

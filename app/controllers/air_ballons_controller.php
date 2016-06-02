@@ -46,6 +46,12 @@ class AirBallonsController extends ApplicationController {
     }
   }
 
+  public function travels() {
+    $ballons = AirBallon::all();
+
+    return ['ballons' => $ballons];
+  }
+
   private function air_ballon_params() {
     return $this->need('air_ballon')->permit('name', 'image', 'type_id');
   }

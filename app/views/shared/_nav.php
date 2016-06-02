@@ -14,12 +14,20 @@
     <ul id="nav-mobile" class="side-nav light-blue darken-3">
       <li><a href=""><i class="tiny material-icons left">settings</i>Ver perfil</a></li>
       <li><a href="logout" data-method="DELETE"><i class="tiny material-icons left">exit_to_app</i>Cerrar Sesión</a></li>
-      <?php echo render('shared/_nav_links'); ?>
+      <?php if(is_current_user_admin()) {
+        render('shared/_admin_nav_links');
+      } else {
+        render('shared/_user_nav_links');
+      } ?>
     </ul>
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
   <ul id="slide-out" class="side-nav fixed light-blue darken-3 ">
-    <?php echo render('shared/_nav_links'); ?>
+    <?php if(is_current_user_admin()) {
+      render('shared/_admin_nav_links');
+    } else {
+      render('shared/_user_nav_links');
+    } ?>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 </nav>

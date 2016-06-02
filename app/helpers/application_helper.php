@@ -4,6 +4,10 @@ function is_logged_in() {
   return isset($_SESSION['user_email']);
 }
 
+function is_admin_logged_in() {
+  return is_current_user_admin();
+}
+
 function current_user() {
   static $user = null;
   if($user_email = $_SESSION['user_email']) {
@@ -16,6 +20,10 @@ function current_user() {
   } else {
     return null;
   }
+}
+
+function is_current_user_admin() {
+  return current_user()->is_admin();
 }
 
 ?>
