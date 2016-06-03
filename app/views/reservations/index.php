@@ -3,6 +3,9 @@
     <table class="bordered highlight">
         <thead>
           <tr>
+            <?php if(current_user()->is_admin()) { ?>
+              <th>Usuario</th>
+            <?php } ?>
               <th>Fecha de remisión</th>
               <th>Globo</th>
               <th>Fecha del viaje</th>
@@ -16,6 +19,9 @@
         <tbody>
           <?php foreach ($reservations as $reservation) { ?>
           <tr>
+          <?php if(current_user()->is_admin()) { ?>
+              <td><?php echo $reservation->user->email; ?></td>
+          <?php } ?>
             <td><?php echo $reservation->date; ?></td>
             <td><?php echo $reservation->flight->air_ballon->name; ?></td>
             <td><?php echo $reservation->itinerary->day; ?></td>

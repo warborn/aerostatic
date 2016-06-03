@@ -3,12 +3,17 @@ require_once(ROOT.DS.'public'.DS.'vendor'.DS.'html2pdf'.DS.'html2pdf.class.php')
 
 class ReservationsController extends ApplicationController {
   public $before_action = [
-    'confirm_user_logged_in' => []
+    'confirm_user_logged_in' => ['only' => ['index']],
+    'confirm_client_logged_in' => ['except' => ['index']]
   ];
   public $layout = 'user';
 
   public function index() {
-    $reservations = current_user()->reservations;
+    if(current_user()->is_admin()) {
+      $reservations = Reservation::all();
+    } else {
+      $reservations = current_user()->reservations;
+    }
 
     return ['reservations' => $reservations];
   }
