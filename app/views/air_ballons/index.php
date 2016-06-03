@@ -17,8 +17,9 @@
         <p>Capacidad: <?php echo $ballon->type->capacity; ?> personas.</p>
       </div>
       <div class="card-action">
+        <a href="air-ballons/<?php echo $ballon->id?>/add-routes">+ Rutas</a>
         <a href="air-ballons/<?php echo $ballon->id?>/edit">Editar</a>
-          <a href="air-ballons/<?php echo $ballon->id?>" data-method="DELETE">Eliminar</a>
+        <a href="air-ballons/<?php echo $ballon->id?>" data-method="DELETE">Eliminar</a>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Info<i class="material-icons right">close</i></span>

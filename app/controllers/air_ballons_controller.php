@@ -55,6 +55,24 @@ class AirBallonsController extends ApplicationController {
     return ['ballons' => $ballons];
   }
 
+  public function add_routes() {
+    $ballon = AirBallon::find($this->params['id']);
+    $routes = Route::all();
+
+    return ['ballon' => $ballon, 'routes' => $routes];
+  }
+
+  public function create_routes() {
+    $params = array(
+      'route_id' => $this->params['route_id'],
+      'air_ballon_id' => $this->params['id']
+    );
+    $air_ballon_route = new AirBallonRoute($params);
+    if($air_ballon_route->save()) {
+      redirect_to('air-ballons/'. $this->params['id'] .'/add-routes');
+    }
+  }
+
   private function air_ballon_params() {
     return $this->need('air_ballon')->permit('name', 'image', 'type_id');
   }

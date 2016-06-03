@@ -4,6 +4,8 @@ $router = App::get_router();
 
 $router->root(['to' => 'pages#index']);
 $router->resources('air-ballons');
+$router->add('air-ballons/{:id}/add-routes', 'GET', ['to' => 'air-ballons#add_routes']);
+$router->add('air-ballons/{:id}/add-routes', 'PATCH', ['to' => 'air-ballons#create_routes']);
 $router->add('travels', 'GET', ['to' => 'air-ballons#travels']);
 $router->add('travels/{:id}/reservations/add', 'GET', ['to' => 'reservations#add']);
 $router->add('reservations', 'POST', ['to' => 'reservations#create']);
