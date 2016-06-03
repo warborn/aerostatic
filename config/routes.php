@@ -18,6 +18,8 @@ $router->resources('prices');
 $router->resources('users');
 $router->add('login', 'POST', ['to' => 'sessions#create']);
 $router->add('logout', 'DELETE', ['to' => 'sessions#destroy']);
+$router->add('flights', 'GET', ['to' => 'flights#index']);
+$router->add('flights/report', 'GET', ['to' => 'flights#index_report']);
 // $router->resources('posts');
 // $router->resources('air-ballons');
 // $router->add('posts', GET, ['to' => 'posts#index']);

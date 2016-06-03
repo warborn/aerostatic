@@ -58,6 +58,9 @@ function report($relative_path, $name, $variables = array()) {
       $fp = fopen($file_path, 'wb');
       fwrite($fp, $pdf_content);
       fclose($fp);
+      header('Content-Type: application/pdf');
+      header('Content-disposition: attachment; filename='.$name);
+      header("Content-Transfer-Encoding: Binary");
       return $file_path;
   }
   catch(HTML2PDF_exception $e) {

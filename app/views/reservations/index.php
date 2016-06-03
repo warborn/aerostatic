@@ -31,7 +31,7 @@
               <?php echo $reservation->itinerary->route->arrival_place; ?>
             </td>
             <td><?php echo $reservation->itinerary->route->duration; ?></td>
-            <td><a target="_blank" href="reservations/<?php echo $reservation->id; ?>/report"><i class="small material-icons left red-text text-darken-3">picture_as_pdf</i></a></td>
+            <td><a target="_blank" href="reservations/<?php echo $reservation->id; ?>/report"><i class="small material-icons left red-text text-accent-2">picture_as_pdf</i></a></td>
           </tr>
           <?php } ?>
         </tbody>

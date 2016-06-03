@@ -3,8 +3,8 @@ require_once(ROOT.DS.'public'.DS.'vendor'.DS.'html2pdf'.DS.'html2pdf.class.php')
 
 class ReservationsController extends ApplicationController {
   public $before_action = [
-    'confirm_user_logged_in' => ['only' => ['index']],
-    'confirm_client_logged_in' => ['except' => ['index']]
+    'confirm_user_logged_in' => ['only' => ['index', 'show_report']],
+    'confirm_client_logged_in' => ['only' => ['add', 'create']]
   ];
   public $layout = 'user';
 
@@ -45,12 +45,9 @@ class ReservationsController extends ApplicationController {
 
   public function show_report() {
     $reservation = Reservation::find($this->params['id']);
-    $name = 'reservation_' . $reservation->id . '.pdf';
+    $name = 'reservacion_' . $reservation->id . '_' . date('Y_m_d') . '.pdf';
 
-    header('Content-Type: application/pdf');
-    header('Content-disposition: attachment; filename='.$name);
-    header("Content-Transfer-Encoding: Binary");
-    $file_path = report('reservations/all.php', $name, ['reservation' => $reservation]);
+    $file_path = report('reservations/show.php', $name, ['reservation' => $reservation]);
     readfile($file_path);
     unlink($file_path);
     exit();
